@@ -1,0 +1,27 @@
+{
+  "name": "space-commerce",
+  "version": "1.0.0",
+  "description": "backend of space-commerce",
+  "main": "index.js",
+  "type":"module",
+  "scripts": {
+    "start": "node index.js",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "jogar": "node exercicios/par-ou-impar.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/beatriz-rossati/SpaceCommerce.git"
+  },
+  "keywords": [
+    "e-commerce",
+    "books",
+    "outter-space"
+  ],
+  "author": "beatriz-schanner-rossati",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/beatriz-rossati/SpaceCommerce/issues"
+  },
+  "homepage": "https://github.com/beatriz-rossati/SpaceCommerce#readme"
+}
