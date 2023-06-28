@@ -1,0 +1,8 @@
+ package-lock 
+# Ignore a pasta node_modules
+node_modules
+# Ignore a pasta tsconfig.json
+tsconfig.json
+# Ignore a pasta package-lock.json
+package-lock.json
+
