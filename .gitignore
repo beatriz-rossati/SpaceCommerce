@@ -4,4 +4,6 @@ node_modules
 tsconfig.json
 # Ignore a pasta package-lock.json
 package-lock.json
+# Ignore o db
+*.db
 
