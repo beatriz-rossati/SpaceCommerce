@@ -14,24 +14,43 @@ app.use(cors());
 app.listen(3003, () => { console.log("Servidor rodando na porta 3003") });
 
 app.get('/ping', (req: Request, res: Response) => {
-    res.send("pong")
+
+    res.status(200).send("pong")
+
 });
 
 app.get('/users', (req: Request, res: Response) => {
-    res.status(200).send(users)
+
+    try {
+        res.status(200).send(users)
+    }
+    catch {
+        res.status(500).send("Erro no servidor")
+    }
 })
 
 app.get('/products', (req: Request, res: Response) => {
     const nameToFind = req.query.name as string
 
-    if (req.query.name === undefined) {
-        res.status(200).send(products)
-    } else {
-        const result = products.filter((product) => product.name.toLowerCase().includes(nameToFind.toLowerCase()))
+    try {
+        if (nameToFind) {
+            if (nameToFind.length < 1) {
+                throw new Error("'text' deve possuir no mínimo 1 caractere")
+            } else {
+                const result = products.filter((product) => product.name.toLowerCase().includes(nameToFind.toLowerCase()))
 
-        result.length !== 0 ?
-            res.status(200).send(result) :
-            res.status(404).send("Produto não encontrado")
+                result.length !== 0 ?
+                    res.status(200).send(result) :
+                    res.status(404).send("Produto não encontrado")
+            }
+        } else {
+            res.status(200).send(products)
+        }
+    }
+
+    catch (error: any) {
+        console.log(error)
+        res.status(400).send(error.message)
     }
 })
 //tem como aqui começar por: query.name === undefined? ou o ts não deixa?
@@ -47,7 +66,7 @@ app.post('/users', (req: Request, res: Response) => {
     const cretedAt = new Date().toISOString()
 
     const user = {
-        id,
+        id: id,
         name,
         email,
         password,
@@ -60,6 +79,7 @@ app.post('/users', (req: Request, res: Response) => {
 })
 
 app.post('/products', (req: Request, res: Response) => {
+    if (typeof req.body.id !== "string") { 1 }
 
     const newProduct: TProducts = {
         id: req.body.id,
@@ -80,7 +100,7 @@ app.post('/products', (req: Request, res: Response) => {
 app.delete("/users/:id", (req: Request, res: Response) => {
     const userToDelete = req.params.id
 
-    const userIndex = users.findIndex((user) => { return user.id === userToDelete})
+    const userIndex = users.findIndex((user) => { return user.id === userToDelete })
 
     if (userIndex >= 0) { users.splice(userIndex, 1) }
 })
@@ -102,7 +122,7 @@ app.put("/products/:id", (req: Request, res: Response) => {
     const newId = req.body.id as string | undefined
     const newName = req.body.name as string | undefined
     const newPrice = req.body.price as number | undefined
-    const newDescription = req.body.description as string | undefined 
+    const newDescription = req.body.description as string | undefined
     const newImageUrl = req.body.imageUrl as string | undefined
 
     const product = products.find((product) => { return product.id === productToEdit })
