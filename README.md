@@ -25,8 +25,8 @@ Mais especificamente, possui as seguintes funcionalidades:
 #### Para utiliza-la:
 Clone esse repositório, 
 //No seu PC, dentro do repositório do projeto, abra o terminal e digite `npm install` para instalar as dependências do projeto.
-Em seguida, para rodar o servidor, o comando no terminal é `npm start`.
-Para orientações de como utilizar a API, referencie a documentação dela.
+  Em seguida, para rodar o servidor, o comando no terminal é `npm start`.
+  Para orientações de como utilizar a API, referencie a documentação dela.
 
 É necessário criar as tabelas manualmente, bastanto clicar nos "Execute" no arquivo spacecommerce.sql. 
 No mesmo arquivo têm também queries que permitem inserir dados nas tabelas, basta alterar os Values e clicar em "Execute".
