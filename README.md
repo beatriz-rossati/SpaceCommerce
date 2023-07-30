@@ -7,17 +7,17 @@ Para facilitar, além das informações diretamente enviadas, ela retorna també
 //como falar da parte relacional?
 
 Mais especificamente, possui as seguintes funcionalidades:
-	Relativo à users (os usuários compradores):
- 		*Buscar por todos os usuários cadastrados,
-	 	*Criar novos usuários;
-	 Relativo à products:
-		*Buscar a lista completa de produtos cadastrados, 
-		*Buscar os produtos cadastrados por nome,
-		*Cadastrar novo produto;
-	Relativo à purchases (pedidos):
- 		*Criar um novo pedido,
-	 	*Buscar um pedido através de seu identificador (Id)
-	 	*Deletar um pedido existente.
+	Relativo à _users_ (os usuários compradores):
+ 		-Buscar por todos os usuários cadastrados,
+	 	-Criar novos usuários;
+	 Relativo à _products_:
+		-Buscar a lista completa de produtos cadastrados, 
+		-Buscar os produtos cadastrados por nome,
+		-Cadastrar novo produto;
+	Relativo à _purchases_ (pedidos):
+ 		-Criar um novo pedido,
+	 	-Buscar um pedido através de seu identificador (Id)
+	 	-Deletar um pedido existente.
 	 
 
 #### Link da documentação: [SpaceCommerce](https://documenter.getpostman.com/view/27681355/2s9Xxtxaz4#e177542b-a0ee-4c80-8435-5c3288fa3d21)
