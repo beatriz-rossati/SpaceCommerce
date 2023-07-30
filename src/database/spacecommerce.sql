@@ -1,54 +1,56 @@
 -- Active: 1689100983376@@127.0.0.1@3306
 CREATE TABLE users (
-    id TEXT PRIMARY KEY UNIQUE NOT NULL,
+    id INTEGER NOT NULL PRIMARY KEY AUTOINCREMENT,
     name TEXT NOT NULL,
     email TEXT UNIQUE NOT NULL,
     password TEXT NOT NULL,
     created_at TEXT NOT NULL
 );
 
-INSERT INTO users (id, name, email, password, created_at)
+INSERT INTO users (name, email, password, created_at)
 VALUES 
-('u004', 'Rafael Sampaio', 'campinas@email.com', 'jsfwfgw', DATETIME ('now'));
+('Rafael', 'campinas2@email.com', 'jsfwf2gw', DATETIME ('now'));
 
-SELECT * FROM users;
 
-SELECT * FROM users
-WHERE name LIKE '%sampaio%';
+CREATE TABLE purchases (
+    id INTEGER NOT NULL PRIMARY KEY AUTOINCREMENT,
+    buyer_id INTEGER NOT NULL,
+    total_price REAL NOT NULL,
+    created_at TEXT NOT NULL,
+    FOREIGN KEY (buyer_id) REFERENCES users(id)
+    ON DELETE CASCADE
+    ON UPDATE CASCADE
+);
 
-DELETE FROM users
-WHERE id = 'u001'; 
+INSERT INTO purchases (buyer_id, total_price, created_at)
+VALUES 
+(1, 33, DATETIME ('now'));
+
+
+CREATE TABLE purchases_products (
+    purchase_id INTEGER NOT NULL,
+    product_id INTEGER NOT NULL,
+    quantity INTEGER NOT NULL,
+    FOREIGN KEY (purchase_id) REFERENCES purchases (id)
+    ON DELETE CASCADE
+    ON UPDATE CASCADE
+    FOREIGN KEY (product_id) REFERENCES products (id) 
+    ON DELETE CASCADE
+    ON UPDATE CASCADE
+);
+
+INSERT INTO purchases_products (purchase_id, product_id, quantity)
+VALUES 
+(2, 2, 3);
 
 
 CREATE TABLE products (
-    id TEXT PRIMARY KEY UNIQUE NOT NULL,
+    id INTEGER NOT NULL PRIMARY KEY AUTOINCREMENT,
     name TEXT NOT NULL,
     price REAL NOT NULL,
-    description TEXT NOT NULL,
+    description TEXT,
     image_url TEXT NOT NULL
 );
 
-INSERT INTO products (id, name, price, description, image_url)
-VALUES ('p006', 'Poliana', 43, 'Livro Bonitinho', 'imagem.com');
-
---update um produto inteiro
-UPDATE products 
-SET 
-    name = 'Cansei',
-    price = 1000,
-    description = 'sem criatividade agora',
-    image_url = 'joga no google'
-WHERE id = 'p002';
-
---update um campo do produto
-UPDATE products
-SET price = 29.99
-WHERE id = 'p003';
-
-SELECT * FROM products;
-
-SELECT * FROM products
-WHERE name LIKE '%guia%';
-
-DELETE FROM products
-WHERE id = 'p001'; 
+INSERT INTO products (name, price, description, image_url)
+VALUES ( 'Guia dos Mochileiros das Galáxias', 39.9, 'Um dos maiores clássicos da literatura de ficção científica.', 'www.imagem.com');

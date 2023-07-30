@@ -6,4 +6,5 @@ tsconfig.json
 package-lock.json
 # Ignore o db
 *.db
-
+#Ignore a build
+build

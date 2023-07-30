@@ -16,7 +16,7 @@ exports.users = [{
         cretedAt: new Date().toISOString(),
     }];
 exports.products = [{
-        id: "prod002",
+        id: "prod001",
         name: "mochileiro das galáxias",
         price: 900,
         description: "livro muito legal",
