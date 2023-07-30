@@ -7,11 +7,9 @@ Para facilitar, além das informações diretamente enviadas, ela retorna també
 //como falar da parte relacional?
 
 Mais especificamente, possui as seguintes funcionalidades:
-
 	Relativo à _users_ (os usuários compradores):
- 
-           - Buscar por todos os usuários cadastrados,
-           + Criar novos usuários;
+            * Buscar por todos os usuários cadastrados,
+            * Criar novos usuários;
 	   
 	 Relativo à _products_:
           Buscar a lista completa de produtos cadastrados, 
