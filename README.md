@@ -20,9 +20,9 @@ Mais especificamente, possui as seguintes funcionalidades:
 	 	* Deletar um pedido existente.
 	 
 
-##### Link da documentação: [SpaceCommerce](https://documenter.getpostman.com/view/27681355/2s9Xxtxaz4#e177542b-a0ee-4c80-8435-5c3288fa3d21)
+#### Link da documentação: [SpaceCommerce](https://documenter.getpostman.com/view/27681355/2s9Xxtxaz4#e177542b-a0ee-4c80-8435-5c3288fa3d21)
 
-##### Para utiliza-la:
+#### Para utiliza-la:
 Clone esse repositório, 
 //No seu PC, dentro do repositório do projeto, abra o terminal e digite `npm install` para instalar as dependências do projeto.
 Em seguida, para rodar o servidor, o comando no terminal é `npm start`.
