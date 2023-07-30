@@ -7,9 +7,12 @@ Para facilitar, além das informações diretamente enviadas, ela retorna també
 //como falar da parte relacional?
 
 Mais especificamente, possui as seguintes funcionalidades:
+
 	Relativo à _users_ (os usuários compradores):
+ 
            - Buscar por todos os usuários cadastrados,
            + Criar novos usuários;
+	   
 	 Relativo à _products_:
           Buscar a lista completa de produtos cadastrados, 
           Buscar os produtos cadastrados por nome,
@@ -25,12 +28,18 @@ Mais especificamente, possui as seguintes funcionalidades:
 #### Para utiliza-la:
 Clone esse repositório, 
 //No seu PC, dentro do repositório do projeto, abra o terminal e digite `npm install` para instalar as dependências do projeto.
+
   Em seguida, para rodar o servidor, o comando no terminal é `npm start`.
+  
   Para orientações de como utilizar a API, referencie a documentação dela.
 
 É necessário criar as tabelas manualmente, bastanto clicar nos "Execute" no arquivo spacecommerce.sql. 
+
 No mesmo arquivo têm também queries que permitem inserir dados nas tabelas, basta alterar os Values e clicar em "Execute".
+
 Também é possível populá-la usando programas como Postman ou Insomnia.
+
 **Atenção:** todos os IDs são criados automático (AUTOINCREMENT).
+
 
 Foi criada em **TypeScript/NodeJs**, utilizando o framework __Express__, o **SQLite** como banco de dados embedded na aplicação e o **Knex** como query builder.
