@@ -9,20 +9,23 @@ Para facilitar, além das informações diretamente enviadas, ela retorna també
 Mais especificamente, possui as seguintes funcionalidades:
 
 Relativo à _users_ (os usuários compradores):
-    * Buscar por todos os usuários cadastrados,
-    * Criar novos usuários;
+    * Buscar por todos os usuários cadastrados,<br/>
+    * Criar novos usuários;<br/>
+
 	   
  Relativo à _products_:
  
-  Buscar a lista completa de produtos cadastrados, 
-  Buscar os produtos cadastrados por nome,
-  Cadastrar novo produto;
+  Buscar a lista completa de produtos cadastrados, <br/>
+  Buscar os produtos cadastrados por nome,<br/>
+  Cadastrar novo produto;<br/>
+
 
 Relativo à _purchases_ (pedidos):
 
-   Criar um novo pedido,
-   Buscar um pedido através de seu identificador (Id)
-   Deletar um pedido existente.
+   Criar um novo pedido,<br/>
+   Buscar um pedido através de seu identificador (Id)<br/>
+   Deletar um pedido existente.<br/>
+
 	 
 
 #### Link da documentação: [SpaceCommerce](https://documenter.getpostman.com/view/27681355/2s9Xxtxaz4#e177542b-a0ee-4c80-8435-5c3288fa3d21)
@@ -41,6 +44,7 @@ Também é possível populá-la usando programas como Postman ou Insomnia.
 
 **Atenção:** todos os IDs são criados automático (AUTOINCREMENT).
 
-
+<br/>
+<br/>
 
 Foi criada em **TypeScript/NodeJs**, utilizando o framework __Express__, o **SQLite** como banco de dados embedded na aplicação e o **Knex** como query builder.
