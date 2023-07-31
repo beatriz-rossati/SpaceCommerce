@@ -8,7 +8,7 @@ Para facilitar, além das informações diretamente enviadas, ela retorna també
 
 Mais especificamente, possui as seguintes funcionalidades:
 
-Relativo à _users_ (os usuários compradores):
+Relativo à _users_ (os usuários compradores):<br/>
     * Buscar por todos os usuários cadastrados,<br/>
     * Criar novos usuários;<br/>
 
