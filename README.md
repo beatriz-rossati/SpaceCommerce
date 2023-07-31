@@ -7,18 +7,19 @@ Para facilitar, além das informações diretamente enviadas, ela retorna també
 //como falar da parte relacional?
 
 Mais especificamente, possui as seguintes funcionalidades:
-	Relativo à _users_ (os usuários compradores):
-            * Buscar por todos os usuários cadastrados,
-            * Criar novos usuários;
+Relativo à _users_ (os usuários compradores):
+	    * Buscar por todos os usuários cadastrados,
+	    * Criar novos usuários;
 	   
-	 Relativo à _products_:
-          Buscar a lista completa de produtos cadastrados, 
-          Buscar os produtos cadastrados por nome,
-          Cadastrar novo produto;
-	Relativo à _purchases_ (pedidos):
-           Criar um novo pedido,
-           Buscar um pedido através de seu identificador (Id)
-           Deletar um pedido existente.
+ Relativo à _products_:
+	  Buscar a lista completa de produtos cadastrados, 
+	  Buscar os produtos cadastrados por nome,
+	  Cadastrar novo produto;
+   
+Relativo à _purchases_ (pedidos):
+	   Criar um novo pedido,
+	   Buscar um pedido através de seu identificador (Id)
+	   Deletar um pedido existente.
 	 
 
 #### Link da documentação: [SpaceCommerce](https://documenter.getpostman.com/view/27681355/2s9Xxtxaz4#e177542b-a0ee-4c80-8435-5c3288fa3d21)
@@ -26,9 +27,7 @@ Mais especificamente, possui as seguintes funcionalidades:
 #### Para utiliza-la:
 Clone esse repositório, 
 //No seu PC, dentro do repositório do projeto, abra o terminal e digite `npm install` para instalar as dependências do projeto.
-
   Em seguida, para rodar o servidor, o comando no terminal é `npm start`.
-  
   Para orientações de como utilizar a API, referencie a documentação dela.
 
 É necessário criar as tabelas manualmente, bastanto clicar nos "Execute" no arquivo spacecommerce.sql. 
