@@ -9,21 +9,20 @@ Para facilitar, além das informações diretamente enviadas, ela retorna també
 Mais especificamente, possui as seguintes funcionalidades:
 
 Relativo à _users_ (os usuários compradores):<br/>
-    * Buscar por todos os usuários cadastrados,<br/>
-    * Criar novos usuários;<br/>
+- Buscar por todos os usuários cadastrados,<br/>
+- Criar novos usuários;<br/>
 
 	   
- Relativo à _products_: <br/>
-  -Buscar a lista completa de produtos cadastrados, <br/>
-  -Buscar os produtos cadastrados por nome,<br/>
-  +Cadastrar novo produto;<br/>
+Relativo à _products_: <br/>
+- Buscar a lista completa de produtos cadastrados, <br/>
+- Buscar os produtos cadastrados por nome,<br/>
+- Cadastrar novo produto;<br/>
 
 
-Relativo à _purchases_ (pedidos):
-
-   Criar um novo pedido,<br/>
-   Buscar um pedido através de seu identificador (Id)<br/>
-   Deletar um pedido existente.<br/>
+Relativo à _purchases_ (pedidos):<br/>
+- Criar um novo pedido,<br/>
+- Buscar um pedido através de seu identificador (Id)<br/>
+- Deletar um pedido existente.<br/>
 
 	 
 
