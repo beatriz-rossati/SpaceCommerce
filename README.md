@@ -13,11 +13,10 @@ Relativo à _users_ (os usuários compradores):<br/>
     * Criar novos usuários;<br/>
 
 	   
- Relativo à _products_:
- 
-  Buscar a lista completa de produtos cadastrados, <br/>
-  Buscar os produtos cadastrados por nome,<br/>
-  Cadastrar novo produto;<br/>
+ Relativo à _products_: <br/>
+  -Buscar a lista completa de produtos cadastrados, <br/>
+  -Buscar os produtos cadastrados por nome,<br/>
+  +Cadastrar novo produto;<br/>
 
 
 Relativo à _purchases_ (pedidos):
