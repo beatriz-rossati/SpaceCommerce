@@ -1,4 +1,4 @@
-## <font color="#22272e"> SpaceCommerce </font>  <br/>
+## `#00D2FF` SpaceCommerce <br/>
 ### API criada com o intuito de gerenciar o back-end de um e-commerce.
 
 Essa API está integrada a um banco de dados (SQLite) que guarda e retorna as informações passadas.
