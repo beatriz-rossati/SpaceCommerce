@@ -22,12 +22,12 @@ Mais especificamente, possui as seguintes funcionalidades:
 
 #### Relativo à _purchases_ (pedidos):<br/>
 - Criar um novo pedido,<br/>
-- Buscar um pedido através de seu identificador (Id)<br/>
+- Buscar um pedido através de seu identificador, (Id)<br/>
 - Deletar um pedido existente.<br/> 
 
 ### Link da documentação: [SpaceCommerce](https://documenter.getpostman.com/view/27681355/2s9Xxtxaz4#e177542b-a0ee-4c80-8435-5c3288fa3d21)
 
-### Para utiliza-la:
+### Para utilizá-la:
 1- Clone esse repositório <br/>
 2- //No seu PC, dentro do repositório do projeto, abra o terminal e digite `npm install` para instalar as dependências do projeto<br/>
 3- Em seguida, para rodar o servidor, o comando no terminal é `npm start`.<br/>
