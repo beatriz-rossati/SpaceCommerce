@@ -34,7 +34,7 @@ Mais especificamente, possui as seguintes funcionalidades:
 4- Para orientações de como utilizar a API, referencie a documentação dela.<br/>
 5- É necessário criar as tabelas manualmente, bastanto clicar nos "Execute" no arquivo spacecommerce.sql. <br/>
 6- No mesmo arquivo têm também queries que permitem inserir dados nas tabelas, basta alterar os Values e clicar em "Execute". <br/>
-	-Também é possível populá-la usando programas como Postman ou Insomnia. <br/>
+	- Também é possível populá-la usando programas como Postman ou Insomnia.
 - #### **Atenção:** todos os IDs são criados automático (AUTOINCREMENT).
 
 <br/>
