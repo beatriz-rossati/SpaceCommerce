@@ -1,4 +1,3 @@
- @@ SpaceCommerce @@
 ## <font color="#22272e"> SpaceCommerce </font>  <br/>
 ### API criada com o intuito de gerenciar o back-end de um e-commerce.
 
@@ -41,7 +40,6 @@ Mais especificamente, possui as seguintes funcionalidades:
 
 #### **Atenção:** todos os IDs são criados automático (AUTOINCREMENT).
 
-<br/>
 <br/>
 
 Foi criada em **TypeScript/NodeJs**, utilizando o framework __Express__, o **SQLite** como banco de dados embedded na aplicação e o **Knex** como query builder.
