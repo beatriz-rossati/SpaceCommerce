@@ -29,18 +29,15 @@ Relativo à _purchases_ (pedidos):<br/>
 #### Link da documentação: [SpaceCommerce](https://documenter.getpostman.com/view/27681355/2s9Xxtxaz4#e177542b-a0ee-4c80-8435-5c3288fa3d21)
 
 #### Para utiliza-la:
-Clone esse repositório, 
-//No seu PC, dentro do repositório do projeto, abra o terminal e digite `npm install` para instalar as dependências do projeto.
-  Em seguida, para rodar o servidor, o comando no terminal é `npm start`.
-  Para orientações de como utilizar a API, referencie a documentação dela.
+1- Clone esse repositório, <br/>
+2- //No seu PC, dentro do repositório do projeto, abra o terminal e digite `npm install` para instalar as dependências do projeto.<br/>
+3-  Em seguida, para rodar o servidor, o comando no terminal é `npm start`.<br/>
+4- Para orientações de como utilizar a API, referencie a documentação dela.<br/>
+5- É necessário criar as tabelas manualmente, bastanto clicar nos "Execute" no arquivo spacecommerce.sql. <br/>
+6- No mesmo arquivo têm também queries que permitem inserir dados nas tabelas, basta alterar os Values e clicar em "Execute". <br/>
+Também é possível populá-la usando programas como Postman ou Insomnia. <br/>
 
-É necessário criar as tabelas manualmente, bastanto clicar nos "Execute" no arquivo spacecommerce.sql. 
-
-No mesmo arquivo têm também queries que permitem inserir dados nas tabelas, basta alterar os Values e clicar em "Execute".
-
-Também é possível populá-la usando programas como Postman ou Insomnia.
-
-**Atenção:** todos os IDs são criados automático (AUTOINCREMENT).
+#### **Atenção:** todos os IDs são criados automático (AUTOINCREMENT).
 
 <br/>
 <br/>
