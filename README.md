@@ -1,5 +1,5 @@
-## <span style="background-color:#00D2FF;"> SpaceCommerce <span/>: ,<br/>
-API criada com o intuito de gerenciar o back-end de um e-commerce.
+## <font color="#22272e"> SpaceCommerce </font>  <br/>
+### API criada com o intuito de gerenciar o back-end de um e-commerce.
 
 Essa API está integrada a um banco de dados (SQLite) que guarda e retorna as informações passadas.
 Sua principal função é registrar pedidos, e para isso ela precisa manipular também as informações de usuários e produtos.
