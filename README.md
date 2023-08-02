@@ -1,11 +1,11 @@
 ## SpaceCommerce <br/>
 ### API criada com o intuito de gerenciar o back-end de um e-commerce.
 
-Essa API está integrada a um banco de dados (SQLite) que guarda e retorna as informações passadas.
+Essa API está integrada a um banco de dados (SQLite) que guarda e retorna informações simulando um e-commerce.
 Sua principal função é registrar pedidos, e para isso ela precisa manipular também as informações de usuários e produtos.
-Para facilitar, além das informações diretamente enviadas, ela retorna também o valor total de um pedido.
+De forma que é possível um usuário registrar vários pedidos, e esses com multiplos produtos e quantidades.
+Além de guardar e retornar dados, ela também gera outras informações, como o total de um pedido.
 
-//como falar da parte relacional?
 
 Mais especificamente, possui as seguintes funcionalidades:
 
@@ -16,8 +16,9 @@ Mais especificamente, possui as seguintes funcionalidades:
 	   
 #### Relativo à _products_: <br/>
 - Buscar a lista completa de produtos cadastrados, <br/>
-- Buscar os produtos cadastrados por nome,<br/>
-- Cadastrar novo produto;<br/>
+- Buscar os produtos cadastrados por nome, <br/>
+- Cadastrar novo produto, <br/>
+- Editar um produto já existente; <br/>
 
 
 #### Relativo à _purchases_ (pedidos):<br/>
@@ -29,13 +30,14 @@ Mais especificamente, possui as seguintes funcionalidades:
 
 ### Para utilizá-la:
 1- Clone esse repositório <br/>
-2- //No seu PC, dentro do repositório do projeto, abra o terminal e digite `npm install` para instalar as dependências do projeto<br/>
+2- Na raíz do projeto, abra o terminal e digite `npm install` para instalar as dependências do projeto. <br/>
 3- Em seguida, para rodar o servidor, o comando no terminal é `npm start`.<br/>
 4- Para orientações de como utilizar a API, referencie a documentação dela.<br/>
-5- É necessário criar as tabelas manualmente, bastanto clicar nos "Execute" no arquivo spacecommerce.sql. <br/>
-6- No mesmo arquivo têm também queries que permitem inserir dados nas tabelas, basta alterar os Values e clicar em "Execute". Sendo também possível populá-la com Postman ou Insomnia por exemplo.
+5- Em seguida, é necessário criar as tabelas manualmente (na primeira vez que rodar o projeto), bastanto clicar nos "Execute" no arquivo spacecommerce.sql. <br/>
+6- No mesmo arquivo têm também queries que permitem inserir dados nas tabelas, basta alterar os Values e clicar em "Execute". Sendo também possível populá-la com Postman ou Insomnia por exemplo. <br/>
   **Atenção:** todos os IDs são criados automático (AUTOINCREMENT).
-
 <br/>
 
-Criada em **TypeScript/NodeJs**, utilizando o framework __Express__, o **SQLite** como banco de dados embedded na aplicação e o **Knex** como query builder.
+Criado em **TypeScript/NodeJs**, utilizando o framework __Express__, <br/>
+**SQLite**, um banco de dados relacional integrado na aplicação, <br/>
+e **Knex**, um query builder que manipula dados em bancos relacionais no NodeJs.
